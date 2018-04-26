@@ -443,7 +443,7 @@ class GoogleAuth(ApiAttributeMixin, object):
                    for config in self.CLIENT_CONFIGS_LIST):
             self.LoadClientConfig()
         constructor_kwargs = {
-            'redirect_uri': self.client_config['redirect_uri'],
+            # 'redirect_uri': self.client_config['redirect_uri'],
             'auth_uri': self.client_config['auth_uri'],
             'token_uri': self.client_config['token_uri'],
         }
